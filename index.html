@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind config (optional) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4A90E2',
+            secondary: '#50E3C2',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Hero Section -->
+  <header class="bg-primary text-white py-12">
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl font-bold">John Doe</h1>
+      <p class="text-xl mt-4">Web Developer & Designer</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+      <p class="text-lg max-w-2xl mx-auto">
+        I am a passionate web developer with expertise in building responsive and user-friendly websites.
+        I love to create modern web experiences using the latest technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-200">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-semibold mb-8 text-center">My Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project 1 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <img src="project1.jpg" alt="Project 1" class="w-full h-40 object-cover mb-4 rounded">
+          <h3 class="text-xl font-semibold mb-2">Project One</h3>
+          <p>A brief description of the project. It was built using HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <img src="project2.jpg" alt="Project 2" class="w-full h-40 object-cover mb-4 rounded">
+          <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+          <p>This project showcases the power of Tailwind CSS in building responsive layouts.</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <img src="project3.jpg" alt="Project 3" class="w-full h-40 object-cover mb-4 rounded">
+          <h3 class="text-xl font-semibold mb-2">Project Three</h3>
+          <p>An example of how modern web technologies can be combined to build scalable web apps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
+      <p class="text-lg mb-8">I would love to collaborate with you on your next project. Let's get in touch!</p>
+      <a href="mailto:john@example.com" class="inline-block bg-primary text-white py-3 px-6 rounded-full shadow-lg">
+        Email Me
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-800 text-white text-center">
+    <p>© 2024 John Doe. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
